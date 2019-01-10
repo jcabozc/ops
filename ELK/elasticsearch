@@ -1,0 +1,5 @@
+## 指定索引文件
+
+logstash-appacc-{now/d-7},logstash-appacc-{now/d-6},logstash-appacc-{now/d-5},\
+logstash-appacc-{now/d-4},logstash-appacc-{now/d-3},logstash-appacc-{now/d-2},logstash-appacc-{now/d-1}
+

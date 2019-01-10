@@ -1,4 +1,4 @@
-## 1. Install 
+## 1. Installation
 
 ```shell
 curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh
