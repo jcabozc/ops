@@ -1,4 +1,4 @@
-## Install 
+## 1. Install 
 
 ```shell
 curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get > get_helm.sh
@@ -18,7 +18,8 @@ kubectl -n kube-system get pods|grep tiller
 
 helm version
 ```
-## if error：
-## 在各个结点上安装：
-## yum -y install socat
-
+*if error：*
+*在各个结点上安装：*
+```shell
+yum -y install socat
+```
