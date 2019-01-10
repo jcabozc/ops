@@ -1,0 +1,127 @@
+1.install
+
+2.configure
+git config --global user.name  "jcabozc"
+git config --global user.email "jcabozc@gmail.com"
+ 
+2. 
+mkdir devtest
+cd devtest/
+git init 
+
+git add file1
+git commit -m "XXXX"
+git status 
+
+git add file2 file3
+git status  
+git commit -m "test add file"
+git status 
+
+3.
+git status 
+git diff changedfile 
+
+git add changedfile 
+git commit -m "XXX"
+
+4. git rollback
+git log 
+git log --pretty=oneline  
+
+git reset --hard HEAD^
+git log 
+
+git reset --hard <ID>
+
+git reflog 
+
+
+5.
+work:
+stage:
+master:
+
+git add:  work >>stage
+git commit: stage >> master
+
+
+6.
+git checkout -- changefile   撤销工作区修改
+
+
+git reset HEAD changefile  撤销stage区修改
+git checkout -- changefile
+
+git status
+
+
+7.
+git rm file2.txt 
+git commit -m "delete file2.txt"
+
+
+8.
+ssh-keygen 
+past pub_key to github
+
+git remote add origin git@github.com:jcabozc/me_test.git
+git push -u origin master  第一次，关联
+
+推送：
+git push origin master
+
+9.
+git checkout -b dev 
+git branch 
+
+git add xxxx
+git commit -m "XXXx"
+
+git checkout master 
+git merge dev 
+
+git branch -d dev   
+
+10.
+
+
+
+git log --graph --pretty=oneline --abbrev-commit
+
+
+
+11.
+
+git remove -v 
+
+git push origin dev 
+
+在本地创建和远程对应的分支：
+git checkout -b devtest origin/devtest
+
+建立本地分支和远程分支的关联
+git branch --set-upstream devtest origin/devtest
+
+git pull 
+
+12.tag 
+
+git tag <tagname>  
+git log --pretty=oneline --abbrev-commit
+
+git tag <tagname> <id>
+
+git tag 查看所有的标签
+
+git tag -d v0.1
+
+git push origin v1.0
+git push origin --tags
+
+
+删除远程：
+git tag -d v0.9
+git push origin :refs/tags/v0.9
+
+13.
